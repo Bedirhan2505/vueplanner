@@ -2,14 +2,13 @@
   <div class="home">
     <div v-if="projects.length">
       <div v-for="project in projects" :keys="project.id">
-        <singleProject :project="project"></singleProject>
+        <singleProject :project="project" @delete="handledelete"></singleProject>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import SingleProject from '../components/singleproject.vue'
 export default {
   name: 'Home',
@@ -25,7 +24,11 @@ export default {
     .then(data =>this.projects = data)
     .catch(err => console.log(err.message))
 
+  },
+methods: {
+  handledelete(id){
+    this.projects = this.projects.filter((project) => project.id !== id)
   }
-
+},
 }
 </script>
