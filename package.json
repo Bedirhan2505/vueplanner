@@ -9,6 +9,7 @@
   "dependencies": {
     "@vue/devtools-api": "^6.4.5",
     "core-js": "^3.8.3",
+    "mime": "^3.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
@@ -16,6 +17,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "@vue/devtools": "^6.4.5"
+    "@vue/devtools": "^5.1.1",
+    "node-polyfill-webpack-plugin": "^2.0.1"
   }
 }
