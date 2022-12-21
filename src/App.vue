@@ -1,14 +1,12 @@
 <template>
-  <nav>
-    <router-link to="/">Anasayfa</router-link> |
-    <router-link to="/add">Ekle</router-link>
-  </nav>
+  <navbar />
   <router-view/>
 </template>
 <script>
+import navbar from './components/navbar.vue';
   export default{
     components :{
-
+      navbar,
     }
   }
 </script>
