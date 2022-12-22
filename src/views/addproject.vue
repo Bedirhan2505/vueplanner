@@ -34,7 +34,7 @@
     }
   }
 </script>
-<style>
+<style scoped>
 form{
   background: rgb(20, 211, 205);
   margin: 30px auto;
